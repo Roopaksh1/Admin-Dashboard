@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  font-size: 62.5%;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  align-items: stretch;
+  justify-items: stretch;
+}
+
+.dashboard-wrapper {
+  font-size: 2.5rem;
+  padding: 3rem;
+  background-color: #ade8f4;
+  grid-row: span 2;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(10, auto) 1fr;
+  column-gap: 15px;
+  row-gap: 20px;
+  align-items: center;
+}
+
+.fa-solid {
+  justify-self: center;
+}
+
+.dashboard, .fa-table-columns, .communities, .fa-people-group {
+  margin-bottom: 5rem;
+}
+
+.header {
+
+}
+
+.main {
+}
+
+.sidebar {
+}
