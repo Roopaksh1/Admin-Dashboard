@@ -15,9 +15,8 @@ body {
 }
 
 .container {
-  height: 100vh;
   display: grid;
-  grid-template-columns: auto 2fr 1fr;
+  grid-template-columns: auto 3fr 1fr;
   grid-template-rows: auto 1fr;
   align-items: stretch;
   justify-items: stretch;
@@ -50,8 +49,8 @@ body {
   background-color: #fff3b0;
   display: grid;
   grid-template-rows: auto 1fr;
-  padding: 3rem 8rem 1.5rem;
-  gap: 3rem;
+  padding: 1.5rem 8rem;
+  gap: 1.5rem;
   align-items: center;
   box-shadow: 5px 2px 10px #ccd0d1;
 }
@@ -83,14 +82,14 @@ body {
 
 .header .big-logo {
   border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   overflow: hidden;
 }
 
 .header .big-logo img {
   position: relative;
-  right: 2.5rem;
+  right: 3rem;
 }
 
 #searchbar {
@@ -131,7 +130,7 @@ button {
 }
 
 .main p {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .projects {
@@ -160,5 +159,55 @@ button {
 }
 
 .sidebar {
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
   grid-area: 2/3/-1/4;
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.announcements > p, .trending > p {
+  margin-bottom: 2.5rem;
+}
+
+.announcements div {
+  border-radius: 3rem;
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.announcements .sub-heading {
+  font-size: 2rem;
+}
+
+.trending > div {
+  background-color: white;
+  border-radius: 3rem;
+  padding: 3rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 5rem;
+  height: 5rem;
+}
+
+.profile-pic img {
+  position: relative;
+  right: 1rem;
 }
