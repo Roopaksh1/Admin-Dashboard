@@ -17,17 +17,18 @@ body {
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
   grid-template-rows: auto 1fr;
   align-items: stretch;
   justify-items: stretch;
+  background-color: #edf2f4;
 }
 
 .dashboard-wrapper {
   font-size: 2.5rem;
   padding: 3rem;
   background-color: #ade8f4;
-  grid-row: span 2;
+  grid-row: span 3;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(10, auto) 1fr;
@@ -36,7 +37,7 @@ body {
   align-items: center;
 }
 
-.fa-solid {
+.dashboard-wrapper .fa-solid {
   justify-self: center;
 }
 
@@ -45,7 +46,81 @@ body {
 }
 
 .header {
+  grid-area: 1/2/2/-1;
+  background-color: #fff3b0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 3rem 8rem 1.5rem;
+  gap: 3rem;
+  align-items: center;
+  box-shadow: 1px 1px 5px;
+}
 
+.header .upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header .lower {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header .small-logo {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+
+.header .small-logo img {
+  position: relative;
+  right: 1.5rem;
+}
+
+.header .big-logo {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.header .big-logo img {
+  position: relative;
+  right: 2.5rem;
+}
+
+#searchbar {
+  border-radius: 1.5rem;
+  height: 3rem;
+  flex: 1;
+  margin: 0 10% 0 0;
+}
+
+.header p {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header .username span {
+  font-size: 1.5rem;
+}
+
+.header .username {
+  font-size: 3rem;
+  margin-right: 40%;
+  width: fit-content;
+}
+
+button {
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  background-color: #ade8f4;
+  cursor: pointer;
 }
 
 .main {
