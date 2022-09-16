@@ -25,16 +25,26 @@ body {
 }
 
 .dashboard-wrapper {
+  min-height: 100vh;
   font-size: 2.5rem;
   padding: 3rem;
   background-color: #ade8f4;
-  grid-row: span 3;
+  grid-row: 1/-1;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(10, auto) 1fr;
   column-gap: 15px;
   row-gap: 20px;
   align-items: center;
+}
+
+.dashboard-wrapper p, .icons {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.dashboard-wrapper p:hover, .icons > *:hover {
+  transform: scale(1.1);
 }
 
 .dashboard-wrapper .fa-solid {
@@ -98,6 +108,16 @@ body {
   height: 3rem;
   flex: 1;
   margin: 0 10% 0 0;
+  padding: 1rem;
+}
+
+.fa-bell, .small-logo, .small-logo + p {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.fa-bell:hover, .small-logo:hover, .small-logo + p:hover {
+  transform: scale(1.1);
 }
 
 .header p {
@@ -138,7 +158,7 @@ button {
   font-size: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 3rem;
+  gap: 5rem;
 }
 
 .projects > * {
@@ -150,9 +170,16 @@ button {
 }
 
 .projects p {
+  height: 15rem;
   font-weight: lighter;
   font-size: 2rem;
   text-align: start;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .projects .icons {
