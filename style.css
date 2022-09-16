@@ -12,6 +12,8 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #edf2f4;
+
 }
 
 .container {
@@ -20,7 +22,6 @@ body {
   grid-template-rows: auto 1fr;
   align-items: stretch;
   justify-items: stretch;
-  background-color: #edf2f4;
 }
 
 .dashboard-wrapper {
@@ -142,9 +143,10 @@ button {
 
 .projects > * {
   padding: 3rem;
-  border-left: 5px #06d6a0 solid;
+  border-left: 2rem #06d6a0 solid;
   background-color: white;
   box-shadow: 1px 1px 5px;
+  border-radius: 1.5rem;
 }
 
 .projects p {
